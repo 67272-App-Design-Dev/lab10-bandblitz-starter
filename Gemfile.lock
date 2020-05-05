@@ -131,7 +131,7 @@ GEM
       mini_portile2 (~> 2.3.0)
     populator3 (0.2.7)
     public_suffix (3.0.0)
-    puma (3.10.0)
+    puma (3.12.4)
     rack (2.0.3)
     rack-contrib (1.2.0)
       rack (>= 0.9.1)
@@ -255,7 +255,7 @@ DEPENDENCIES
   meta_request
   mocha
   populator3
-  puma (~> 3.7)
+  puma (~> 3.12)
   rails (~> 5.1.4)
   sass-rails (~> 5.0)
   sdoc
