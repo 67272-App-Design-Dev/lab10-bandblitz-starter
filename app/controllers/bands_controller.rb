@@ -24,8 +24,7 @@ class BandsController < ApplicationController
   # POST /bands
   # POST /bands.json
   def create
-    params[:band][:genre_ids] ? genres = params[:band][:genre_ids] : genres = Array.new
-    @band = Band.new(band_params) if Band.check_genres(genres)
+    @band = Band.new(band_params)
 
     if @band.save
       redirect_to(@band, :notice => 'Band was successfuly created.')
@@ -38,7 +37,6 @@ class BandsController < ApplicationController
   # PATCH/PUT /bands/1
   # PATCH/PUT /bands/1.json
   def update
-    Band.check_genres(params[:band][:genre_ids])
     if @band.update_attributes(band_params)
       redirect_to(@band, :notice => 'Band was successfully updated.')
     else
