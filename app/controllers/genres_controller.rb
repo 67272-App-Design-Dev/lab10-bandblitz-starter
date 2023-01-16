@@ -35,7 +35,7 @@ class GenresController < ApplicationController
   # PATCH/PUT /genres/1
   # PATCH/PUT /genres/1.json
   def update
-    if @genre.update_attributes(genre_params)
+    if @genre.update(genre_params)
       redirect_to(@genre, :notice => 'Genre was successfully updated.')
     else
       render :action => "edit"
