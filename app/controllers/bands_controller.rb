@@ -37,7 +37,7 @@ class BandsController < ApplicationController
   # PATCH/PUT /bands/1
   # PATCH/PUT /bands/1.json
   def update
-    if @band.update_attributes(band_params)
+    if @band.update(band_params)
       redirect_to(@band, :notice => 'Band was successfully updated.')
     else
       render :action => "edit"
