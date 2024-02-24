@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.1.2"
+ruby "3.1.4"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.4"
+gem "rails", "7.0.4"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -56,7 +56,7 @@ end
 # carrierwave
 gem 'carrierwave'
 # cancancan for Authorization
-gem 'cancancan'
+gem 'cancancan', '3.5.0'
 gem 'jquery-rails'
 
 group :development do
